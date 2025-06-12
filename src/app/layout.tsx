@@ -1,3 +1,4 @@
+import AuthSessionProvider from "@/components/providers/session-provider"
 import Footer from "@/components/ui/Footer"
 import { Navigation } from "@/components/ui/Navbar"
 import type { Metadata } from "next"
@@ -53,15 +54,17 @@ export default function RootLayout({
       <body
         className={`${inter.className} min-h-screen scroll-auto antialiased selection:bg-indigo-100 selection:text-indigo-700 dark:bg-gray-950`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          disableTransitionOnChange
-        >
-          <Navigation />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <AuthSessionProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            disableTransitionOnChange
+          >
+            <Navigation />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </AuthSessionProvider>
       </body>
     </html>
   )
