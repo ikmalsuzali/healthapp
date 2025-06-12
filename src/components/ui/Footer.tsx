@@ -8,7 +8,7 @@ const navigation = {
     { name: "Enterprise", href: "#", external: false },
     { name: "Pricing", href: "/pricing", external: false },
     { name: "Docs", href: "#", external: false },
-    { name: "Changelog", href: "/changelog", external: false },
+    { name: "Premium Plans", href: "/premium-plans", external: false },
   ],
   resources: [
     { name: "FAQs", href: "/pricing#faq-title", external: false },
