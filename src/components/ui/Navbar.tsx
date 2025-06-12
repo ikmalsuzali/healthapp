@@ -59,9 +59,9 @@ export function Navigation() {
               </Link>
               <Link
                 className="px-2 py-1 text-gray-900 dark:text-gray-50"
-                href={siteConfig.baseLinks.changelog}
+                href={siteConfig.baseLinks.premium}
               >
-                Changelog
+                Premium Plans
               </Link>
             </div>
           </nav>
@@ -97,7 +97,7 @@ export function Navigation() {
               <Link href={siteConfig.baseLinks.pricing}>Pricing</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href={siteConfig.baseLinks.changelog}>Changelog</Link>
+              <Link href={siteConfig.baseLinks.premium}>Premium Plans</Link>
             </li>
           </ul>
         </nav>
